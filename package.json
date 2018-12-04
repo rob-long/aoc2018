@@ -1,0 +1,28 @@
+{
+  "name": "aoc2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rob-long/aoc2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rob-long/aoc2018/issues"
+  },
+  "homepage": "https://github.com/rob-long/aoc2018#readme",
+  "devDependencies": {
+    "babel-eslint": "8",
+    "eslint": "4.x"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3"
+  }
+}

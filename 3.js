@@ -3,6 +3,7 @@ const data = fs.readFileSync('./input3.txt', 'utf8');
 
 const claims = new Map();
 const overlaps = new Set();
+const ids = new Set();
 
 for (const line of data.split('\n')) {
   const result = RegExp(/(\d+) @ (\d+),(\d+)\: (\d+)x(\d+)/).exec(line);
@@ -28,8 +29,14 @@ for (const line of data.split('\n')) {
           overlaps.add(key);
         }
       }
+      ids.add(id);
     }
   }
 }
 
+overlaps.forEach(value => {
+  claims.get(value).forEach(id => ids.delete(id));
+});
+
 console.log(overlaps.size);
+console.log(ids);
